@@ -11,7 +11,6 @@ public class Question1{
         
         do{
             System.out.println(x1 + " ");
-            
             int x3 = x1 + x2;
             x1 = x2;
             x2 = x3;
