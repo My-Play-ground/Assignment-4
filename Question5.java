@@ -11,10 +11,14 @@ public class Question5 {
             String reversedText = reverseString(input);
             System.out.println("Reversed Text: " + reversedText);
 
+        }else{
+            System.out.println("Input is empty,Try again: ");
         }
+        scan.close();
     }
 
     private static String reverseString(String input) {
-        return null;
+        char[] charArray = str.toCharArray();
+        int left = 0;
     }
 }
