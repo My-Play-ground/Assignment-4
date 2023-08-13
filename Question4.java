@@ -13,7 +13,9 @@ public class Question4 {
 
         }
 
-        
+        for (int num: nums){
+            System.out.print(num+ " ");
+        }
         
     }
 }
