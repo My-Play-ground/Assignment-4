@@ -2,32 +2,37 @@ import java.util.Scanner;
 
 public class Question5 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user  (ASCII only)
         System.out.print("Enter (ASCII only) text: ");
+        String input = scanner.nextLine();
 
-        String input= scan.nextLine();
-
-        if (!input.isEmpty()){
+        // Check if the input 
+        if (!input.isEmpty()) {
+            // Invert the sequence 
             String reversedText = reverseString(input);
-            System.out.println("Reversed Text: " + reversedText);
 
-        }else{
+            // Display the reversed text
+            System.out.println("Reversed Text: " + reversedText);
+        } else {
             System.out.println("Input is empty,Try again: ");
         }
-        scan.close();
+
+        scanner.close();
     }
 
-    private static String reverseString(String input) {
+    
+    public static String reverseString(String str) {
         char[] charArray = str.toCharArray();
         int left = 0;
         int right = charArray.length - 1;
-
-        while(left<right){
+        while (left < right) {
             char temp = charArray[left];
             charArray[left] = charArray[right];
-            charArray[right]= temp;
+            charArray[right] = temp;
             left++;
-            right++;
+            right--;
         }
         return new String(charArray);
     }
