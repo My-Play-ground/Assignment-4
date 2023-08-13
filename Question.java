@@ -3,7 +3,7 @@ public class Question {
         int[] nums = {10, 20, 30, 40, 50};
         
         int[] revArray = new int[nums.length];
-        for (int i = ;i < nums.length; i++);
+        for (int i = 0;i < nums.length; i++);
 
 
     } 
